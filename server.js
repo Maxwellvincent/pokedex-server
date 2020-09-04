@@ -71,7 +71,7 @@ function handleGetPokemon(req,res){
 app.get('/types', handleGetTypes)
 app.get('/pokemon',handleGetPokemon)
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || '8000';
 
 app.listen(PORT, () => {
     console.log(`Server listening at http://localhost:${PORT}`);
